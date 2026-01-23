@@ -307,6 +307,10 @@ a button
 {
     margin: 0 auto;
 }
+#square img
+{
+    width: 60%;
+}
 
 /* Google Fonts Roboto Flex */
 
