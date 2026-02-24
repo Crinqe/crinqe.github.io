@@ -108,9 +108,10 @@ div div p
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "item1 item2"
-                         "item3 item4";
+                         "item3 item4"
+                         "item5";
     }
-    #item1, #item2, #item3, #item4
+    #item1, #item2, #item3, #item4, #item5
     {
         width: 70%;
     }
