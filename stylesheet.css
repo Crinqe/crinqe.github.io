@@ -37,6 +37,10 @@ nav li {
 {
     margin-bottom: 3em;
     margin: 0 auto;
+    a button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
 a {
     text-decoration: none;
@@ -102,7 +106,7 @@ div div p
         grid-template-areas: "item1 item2"
                          "item3 item4"
                          "item5 item6"
-                         "item7";
+                         "item7 item8";
     }
     h3, #item1, #item2, #item3, #item4, #item5, #item6, #item7
     {
