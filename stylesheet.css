@@ -1,28 +1,38 @@
-body
-{
+body {
     background-color: #2F3E46;
     background-image: url(images/Grid.png);
     width: 70vw;
     margin: 2rem auto;
     text-align: center;
-}
-header
-{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-h2, h3 
-{
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about {
+    margin-top: 10vh;
+    margin-bottom: 2rem;
+}
+
+h2,
+h3 {
     color: white;
     background-color: #52796F;
     width: 40vw;
     border-style: solid;
     border-color: white;
     margin: 2rem auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
+    min-width: fit-content;
+    max-width: calc(90% - 1rem);
 }
+
 nav li {
     list-style-type: none;
     display: inline;
@@ -33,42 +43,46 @@ nav li {
     margin-left: 1em;
     margin-right: 1em;
 }
-#highlight
-{
+
+#highlight {
     margin-bottom: 3em;
     margin: 0 auto;
+
     a button {
         margin-top: 10px;
         margin-bottom: 10px;
     }
 }
+
 a {
     text-decoration: none;
     background-color: transparent;
 }
+
 #gameGallery {
     display: grid;
     align-items: center;
     justify-items: center;
     margin: 0 auto;
 }
-#contact
-{
+
+#contact {
     margin: 0 auto;
 }
-#gameGallery div
-{
+
+#gameGallery div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-div div p
-{
+
+div div p {
     margin: 1em auto;
 }
-#gameGallery p, #gameGallery h2
-{
+
+#gameGallery p,
+#gameGallery h2 {
     color: white;
     width: 90%;
     align-content: center;
@@ -76,162 +90,173 @@ div div p
 }
 
 /* Desktop Width */
-@media screen and (min-width: 1000px)
-{
-    #contact
-    {
+@media screen and (min-width: 1000px) {
+    #contact {
         width: 40vw;
     }
-    #title, h2
-    {
+
+    h2 {
         width: 55vw;
     }
-    #about, #highlight
-    {
+
+    #about,
+    #highlight {
         width: 60vw;
     }
-    button
-    {
+
+    button {
         font-size: 18px;
     }
-    .carousel .slide
-    {
+
+    .carousel .slide {
         width: 90%;
         margin: 0 auto;
     }
-    #gameGallery
-    {
+
+    #gameGallery {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "item1 item2"
-                         "item3 item4"
-                         "item5 item6"
-                         "item7 item8";
+            "item3 item4"
+            "item5 item6"
+            "item7 item8";
     }
-    h3, #item1, #item2, #item3, #item4, #item5, #item6, #item7
-    {
+
+    #item1,
+    #item2,
+    #item3,
+    #item4,
+    #item5,
+    #item6,
+    #item7 {
         width: 70%;
     }
 }
 
 /* Mobile Width */
-@media screen and (min-width: 320px)
-{
-    #gameGallery p, #gameGallery h2
-    {
+@media screen and (min-width: 320px) {
+
+    #gameGallery p,
+    #gameGallery h2 {
         color: white;
         width: 80%;
         align-content: center;
         margin: none 2em;
     }
-    #gameGallery div .section
-    {
+
+    #gameGallery div .section {
         margin-top: 3em;
         margin-bottom: 3em;
     }
-    #gameGallery img
-    {
+
+    #gameGallery img {
         width: 100%;
     }
-    h3, .section
-    {
+
+    .section {
         width: 90%;
     }
-    body
-    {
+
+    body {
         width: 80vw;
     }
-    #highlight
-    {
+
+    #highlight {
         width: 85%;
     }
-    .carousel .slide
-    {
+
+    .carousel .slide {
         grid-column: 1/3;
         grid-row: 1/2;
     }
-    .carousel .nextButton
-    {
+
+    .carousel .nextButton {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    .carousel .previousButton
-    {
+
+    .carousel .previousButton {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .carousel .nextButton, .carousel .previousButton
-    {
+
+    .carousel .nextButton,
+    .carousel .previousButton {
         margin: 1em auto;
     }
-    #contact
-    {
+
+    #contact {
         width: 70vw;
     }
-    #about h3
-    {
+
+    #about h3 {
         width: 70%;
     }
+
+    #about {
+        margin-top: 20vh;
+    }
 }
-@media screen and (min-width: 320px) and (max-width: 700px)
-{
-    .carousel
-    {
+
+@media screen and (min-width: 320px) and (max-width: 700px) {
+    .carousel {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 3fr 1fr;
     }
-    #highlight
-    {
+
+    #highlight {
         height: 850px;
         min-height: fit-content;
     }
-    #gameGallery
-    {
+
+    #gameGallery {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    #title
-    {
+
+    #title {
         width: 80vw;
     }
-    h2
-    {
+
+    h2 {
         width: 90%;
     }
 }
 
 /* Tablet Width */
-@media screen and (min-width: 700px)
-{
-    .carousel
-    {
+@media screen and (min-width: 700px) {
+    .carousel {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
+
+    #about {
+        margin-top: 10vh;
+    }
+
 }
-@media screen and (min-width: 700px) and (max-width: 1000px)
-{
-    #title
-    {
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    #title {
         width: 50vw;
     }
 }
-ul
-{
+
+ul {
     text-align: left;
 }
-div img
-{
+
+div img {
     width: 100%;
     border: 3px solid white;
 }
-div h2
-{
+
+div h2 {
     background-color: #52796F;
     width: 15vw;
     margin-left: auto;
@@ -241,8 +266,8 @@ div h2
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
-.section
-{
+
+.section {
     color: white;
     background-color: #52796F;
     padding: 1em;
@@ -253,58 +278,64 @@ div h2
 }
 
 /* Link Styles */
-a:link
-{
+a:link {
     color: rgb(202, 210, 197);
 }
-a:visited
-{
+
+a:visited {
     color: rgb(202, 210, 197);
 }
-a:hover
-{
+
+a:hover {
     color: white;
-}  
-#title
-{
+}
+
+#title {
     color: white;
     background-color: #52796F;
-    border-style: solid;
-    border-color: white;
-    margin: 2rem auto;
+    /*    border-style: solid;
+    border-color: white;*/
+    /*margin: 2rem auto;*/
+    border-bottom: 3px solid white;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    margin: 0 !important;
+    width: 100vw;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 25%);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, 40%);
 }
-#contact ul
-{
+
+#contact ul {
     margin: 0 auto;
     text-align: center;
     padding-left: 0;
 }
-#contact ul li
-{
+
+#contact ul li {
     display: inline-block;
     list-style-type: none;
     margin: 1em auto;
     padding-left: 5px;
     padding-right: 5px;
 }
-#contact ul li:first-child
-{
+
+#contact ul li:first-child {
     display: list-item;
 }
-.slide img
-{
+
+.slide img {
     border: 3px solid white;
 }
-.carousel
-{
+
+.carousel {
     width: 100%;
     gap: 10px;
     height: 30%;
 }
-button
-{
+
+button {
     border-radius: 15px;
     background-color: #84A98C;
     color: #2F3E46;
@@ -316,32 +347,45 @@ button
     display: flex;
     align-items: center;
 }
-a button
-{
+
+a button {
     margin: 0 auto;
 }
-#square img
-{
+
+#square img {
     width: 60%;
 }
 
 /* Google Fonts Roboto Flex */
 
 .roboto-flex {
-  font-family: "Roboto Flex", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "wdth" 100,
-    "GRAD" 0,
-    "XOPQ" 96,
-    "XTRA" 468,
-    "YOPQ" 79,
-    "YTAS" 750,
-    "YTDE" -203,
-    "YTFI" 738,
-    "YTLC" 514,
-    "YTUC" 712;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "wdth" 100,
+        "GRAD" 0,
+        "XOPQ" 96,
+        "XTRA" 468,
+        "YOPQ" 79,
+        "YTAS" 750,
+        "YTDE" -203,
+        "YTFI" 738,
+        "YTLC" 514,
+        "YTUC" 712;
+}
+
+/* Google Fonts Silkscreen */
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.silkscreen-bold {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
