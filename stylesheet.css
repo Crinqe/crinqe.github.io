@@ -216,9 +216,13 @@ div div p {
         align-items: center;
         justify-content: center;
     }
-
+    #nav-buttons
+    {
+        visibility: hidden;
+    }
     #title {
-        width: 80vw;
+        width: 50vw;
+        font-size: 20px;
     }
 
     h2 {
@@ -290,23 +294,51 @@ a:hover {
     color: white;
 }
 
-#title {
-    color: white;
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     background-color: #52796F;
-    /*    border-style: solid;
-    border-color: white;*/
-    /*margin: 2rem auto;*/
     border-bottom: 3px solid white;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    padding-right: 1em;
+    padding-left: 1em;
     position: fixed;
     top: 0;
     margin: 0 !important;
     width: 100vw;
     box-shadow: 10px 10px 10px rgb(0, 0, 0, 25%);
     text-shadow: 2px 2px 2px rgb(0, 0, 0, 40%);
+
+    #title {
+        color: white;
+        width: fit-content;
+        text-wrap: nowrap;
+    }
+
+    #nav-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: fit-content;
+        align-items: center;
+    }
+
+    li {
+        background-color: transparent;
+        border-bottom: 0;
+        padding: 0;
+        top: 0;
+        width: 100vw;
+        box-shadow: none;
+        text-shadow: none;
+        border-color: transparent;
+        width: fit-content;
+    }
 }
 
+/* Contact Section */
 #contact ul {
     margin: 0 auto;
     text-align: center;
