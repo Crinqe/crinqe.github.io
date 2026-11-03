@@ -23,14 +23,27 @@ header {
 h2,
 h3 {
     color: white;
-    background-color: #52796F;
     width: 40vw;
-    border-style: solid;
-    border-color: white;
-    margin: 2rem auto;
+    margin: 0.5em auto;
     padding: 1rem;
     min-width: fit-content;
     max-width: calc(90% - 1rem);
+}
+
+h3
+{
+    font-size: 24px;
+}
+
+#header-only {
+    border-style: solid;
+    border-color: white;
+    background-color: #52796F;
+    margin: 2em auto;
+    width: fit-content;
+    padding: 1rem 3rem 1rem 3rem;
+    font-size: 28px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, 40%);
 }
 
 nav li {
@@ -75,6 +88,11 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.square img {
+    width: 60% !important;
+    max-height: 100%;
 }
 
 div div p {
@@ -178,6 +196,10 @@ div div p {
     .carousel .previousButton {
         grid-column: 1/2;
         grid-row: 2/3;
+
+        img {
+            transform: scaleX(-1);
+        }
     }
 
     .carousel .nextButton,
@@ -257,14 +279,13 @@ div img {
 }
 
 div h2 {
-    background-color: #52796F;
     width: 15vw;
     margin-left: auto;
     margin-right: auto;
-    border-style: solid;
-    border-color: white;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    font-size: 28px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, 40%);
 }
 
 .section {
@@ -346,14 +367,15 @@ button {
     height: 20px;
     display: flex;
     align-items: center;
+
+    img {
+        width: 25px;
+        border: none;
+    }
 }
 
 a button {
     margin: 0 auto;
-}
-
-#square img {
-    width: 60%;
 }
 
 /* Google Fonts Roboto Flex */

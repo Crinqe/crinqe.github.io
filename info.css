@@ -78,6 +78,10 @@ button
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    img {
+        width: 25px;
+        border: none;
+    }
 }
 
 /* Mobile and Tablet */
@@ -145,6 +149,9 @@ button
         grid-column: 1/2;
         grid-row: 2/3;
         margin: 1em auto;
+        img {
+            transform: scaleX(-1);
+        }
     }
 }
 
