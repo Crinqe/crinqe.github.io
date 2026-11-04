@@ -2,7 +2,8 @@ body {
     background-color: #2F3E46;
     background-image: url(images/Grid.png);
     width: 70vw;
-    margin: 2rem auto;
+    margin: 0 auto;
+    margin-top: 10vh;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -13,6 +14,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+footer {
+    width: 100vw;
 }
 
 #about {
@@ -30,8 +35,7 @@ h3 {
     max-width: calc(90% - 1rem);
 }
 
-h3
-{
+h3 {
     font-size: 24px;
 }
 
@@ -80,7 +84,39 @@ a {
 }
 
 #contact {
-    margin: 0 auto;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    padding: 0 5em 0 5em;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+        width: fit-content;
+    }
+
+    #contact-text {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        justify-content: space-between;
+    }
+
+    img {
+        border: none;
+        width: 25px;
+        padding: 10px;
+        filter: invert(1);
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+    }
 }
 
 #gameGallery div {
@@ -109,9 +145,6 @@ div div p {
 
 /* Desktop Width */
 @media screen and (min-width: 1000px) {
-    #contact {
-        width: 40vw;
-    }
 
     h2 {
         width: 55vw;
@@ -179,6 +212,10 @@ div div p {
         width: 80vw;
     }
 
+    #contact {
+        width: calc(100% - 10em);
+    }
+
     #highlight {
         width: 85%;
     }
@@ -205,10 +242,6 @@ div div p {
     .carousel .nextButton,
     .carousel .previousButton {
         margin: 1em auto;
-    }
-
-    #contact {
-        width: 70vw;
     }
 
     #about h3 {
@@ -266,6 +299,39 @@ div div p {
 @media screen and (min-width: 700px) and (max-width: 1000px) {
     #title {
         width: 50vw;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+    #contact {
+        display: flex;
+        flex-direction: column;
+
+        #contact-text {
+            width: fit-content;
+            flex-wrap: wrap;
+        }
+    }
+    #contact ul li:first-child {
+        display: list-item;
+    }
+
+    #contact ul {
+        margin: 0 auto;
+        text-align: center;
+        padding-left: 0;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #contact ul li {
+        display: inline-block;
+        list-style-type: none;
+        margin: 1em auto;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 
@@ -329,9 +395,9 @@ a:hover {
 }
 
 #contact ul {
-    margin: 0 auto;
     text-align: center;
     padding-left: 0;
+    width: fit-content;
 }
 
 #contact ul li {
@@ -340,10 +406,6 @@ a:hover {
     margin: 1em auto;
     padding-left: 5px;
     padding-right: 5px;
-}
-
-#contact ul li:first-child {
-    display: list-item;
 }
 
 .slide img {
